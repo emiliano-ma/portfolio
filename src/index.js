@@ -1,19 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom"
+import { Switch, Route, BrowserRouter } from "react-router-dom"
 import Hello from "./Hello";
 import Header from "./Header";
 import Footer from "./Footer";
-//todavía no importé about and projects porque 
-//se van a importar solos cuando los agregue a la función App
+import About from "./About";
+import Projects from "./Projects";
 
 const App = () => {
   return (
-    <div>
+    <>
       <Header/>
-      <Hello/>
+      <Switch>
+        <Route exact path="/" component={Hello}></Route>
+        <Route exact path="/about" component={About}></Route>
+        <Route exact path="/projects" component={Projects}></Route>
+      </Switch>
       <Footer/>
-    </div>
+    </>
   )
 };
 
