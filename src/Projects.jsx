@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from "axios"
 import ProjectCard from './ProjectCard'
+import { UndrawDashboard } from "react-undraw-illustrations"
 
 export class Projects extends Component {
   state = {
@@ -31,9 +32,19 @@ export class Projects extends Component {
     }
     return (
       <div className="ui main container">
-        <h1 id="projects-header" className="ui header">
-          My Projects
-        </h1>
+        <div className="ui stackable two column grid">
+          <div class="column">
+            <UndrawDashboard primaryColor='#12283a' height='200px' />
+          </div>
+          <div class="column">
+            <h1 id="projects-header" className="ui header">
+              My Projects
+            </h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni repellat tenetur eius nemo, quam dolorem aut sed totam ad dicta, quaerat aperiam illo quis inventore est delectus exercitationem ipsa atque. Fuga aliquam excepturi deserunt dignissimos, nihil saepe magni inventore facere asperiores sunt enim alias, ullam sit! Quasi beatae, distinctio ex quod sequi iusto similique minus.
+            </p>
+          </div>
+        </div>
         <div className="ui stackable four column grid"> 
           {projectsList}
         </div>
