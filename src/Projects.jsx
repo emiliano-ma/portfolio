@@ -1,14 +1,41 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-const Projects = () => {
-  return (
-    <div className="ui main container">
-      <h1 id="projects-header" className="ui header">My Projects</h1>
-      <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam sequi molestias placeat distinctio porro nostrum vero provident, eligendi ducimus dolore aperiam at magnam expedita eos cum, asperiores nulla rerum quas magni! Fuga obcaecati ad, voluptatibus ducimus ipsam minus excepturi error perspiciatis quasi dolores autem. Dolorum illum iure aspernatur libero beatae odio, consectetur necessitatibus sed tenetur.
-      </p>
-    </div>
-  )
+export class Projects extends Component {
+  state = {
+    projects: [
+      {
+        id: 1
+        name: "My First Website",
+      },
+      {
+        id: 2
+        name: "FizzBuzz"
+      }
+    ]
+  }
+
+  render() {
+    const projects = this.state.projects;
+    let projectsList;
+
+    if (projects.length > 0) {
+      projectsList = projects.map((project) => {
+        return (
+          <div id={"project-" + project.id} key={project.id}>
+            <h3 className="iu header">{project.name}</h3>
+          </div>
+        )
+      })
+    }
+    return (
+      <div className="ui main container">
+        <h1 id="projects-header" className="ui header">
+          My Projects
+        </h1>
+        {projectsList}
+      </div>
+    )
+  }
 }
 
 export default Projects
