@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from "axios"
+import ProjectCard from './ProjectCard'
 
 export class Projects extends Component {
   state = {
@@ -22,7 +23,8 @@ export class Projects extends Component {
       projectsList = projects.map((project) => {
         return (
           <div id={"project-" + project.id} key={project.id}>
-            <h3 className="ui header">{project.name}</h3>
+            <ProjectCard project={project} />
+            {/* <h3 className="ui header">{project.name}</h3> */}
           </div>
         )
       })
@@ -32,7 +34,9 @@ export class Projects extends Component {
         <h1 id="projects-header" className="ui header">
           My Projects
         </h1>
-        {projectsList}
+        <div className="ui stackable four column grid"> 
+          {projectsList}
+        </div>
       </div>
     )
   }
