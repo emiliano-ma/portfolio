@@ -1,17 +1,17 @@
 import React, { Component } from 'react'
+import axios from "axios"
 
 export class Projects extends Component {
   state = {
-    projects: [
-      {
-        id: 1
-        name: "My First Website",
-      },
-      {
-        id: 2
-        name: "FizzBuzz"
-      }
-    ]
+    projects: []
+  }
+  componentDidMount() {
+    axios.get('./src/data/projects.json')
+    .then(response => {
+      this.setState({
+        projects: response.data
+      })
+    })
   }
 
   render() {
@@ -22,7 +22,7 @@ export class Projects extends Component {
       projectsList = projects.map((project) => {
         return (
           <div id={"project-" + project.id} key={project.id}>
-            <h3 className="iu header">{project.name}</h3>
+            <h3 className="ui header">{project.name}</h3>
           </div>
         )
       })
