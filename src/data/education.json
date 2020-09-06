@@ -1,22 +1,22 @@
 [
   {
     "id": 1,
+    "degree": "Full Stack Web Developer - Coding Bootcamp",
     "school": "Craft Academy https://www.linkedin.com/company/craftacademy/", 
-    "degree": "Coding Bootcamp - Full Stack Web Development",
-    "date": "2020 - 2020",
+    "date": "Aug 2020 - Nov 2020",
     "location": "Stockholm, Sweden"
   },
   {
     "id": 2,
-    "school": "Universidad Nacional del Litoral https://www.linkedin.com/school/universidad-nacional-del-litoral/", 
     "degree": "Agricultural Engineer, Business and Management",
+    "school": "Universidad Nacional del Litoral https://www.linkedin.com/school/universidad-nacional-del-litoral/", 
     "date": "2008 - 2014",
     "location": "Esperaza, Argentina"
   },
   {
     "id": 3,
-    "school": "Universidade de São Paulo https://www.linkedin.com/school/universidade-de-s-o-paulo/", 
     "degree": "Agricultural Engineer Business and Management - Student exchange",
+    "school": "Universidade de São Paulo https://www.linkedin.com/school/universidade-de-s-o-paulo/", 
     "date": "2013 - 2013",
     "location": "Piracicaba, Brasil"
   }
