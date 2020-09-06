@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from "axios"
-import CvCard from './CvCard'
+import CvItemWork from './CvItemWork'
 
 export class Cv extends Component {
   state = {
@@ -33,7 +33,7 @@ export class Cv extends Component {
       workExperiencesList = workExperiences.map((workExp) => {
         return (
           <div id={"workExperience-" + workExp.id} key={workExp.id}>
-            <CvCard workExp={workExp} />
+            <CvItemWork workExp={workExp}/>
           </div>
         )
       })

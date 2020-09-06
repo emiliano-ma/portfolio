@@ -38,6 +38,9 @@ footer {
   justify-content: space-between;
   min-width: 30vw;
 }
+.padding {
+  padding-top: 20px;
+}
 /* .nav_link:hover {
   cursor: pointer;
 } */
