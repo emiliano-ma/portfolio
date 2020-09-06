@@ -15,7 +15,7 @@ footer {
   padding-bottom: 20px;
   background-color: #0f0f0f;
   color: rgb(255, 247, 247);
-  margin-top: 0;
+  margin-top: 50px;
   margin-bottom: 0;
   padding-left: 10%;
   padding-right: 10%;
@@ -39,7 +39,11 @@ footer {
   min-width: 30vw;
 }
 .padding {
-  padding-top: 20px;
+  padding-top: 30px;
+}
+
+.center {
+  padding-top: 100px;
 }
 /* .nav_link:hover {
   cursor: pointer;
