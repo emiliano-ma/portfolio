@@ -1,17 +1,21 @@
 [
   {
     "id": 1,
-    "title": "Repair Partner - Lead of repair operations", 
-    "company": "Voi Technology https://www.linkedin.com/company/voi-technology/",
+    "title": "Lead of repair operations - Repair Partner", 
+    "company": "Voi Technology",
+    "url": "https://www.linkedin.com/company/voi-technology/",
+    "image": "https://images.ohmyhosting.se/rSj2XBxosWncUzjZoTHOhmrjVz0=/fit-in/2200x960/smart/filters:quality(85)/https%3A%2F%2Fwww.voiscooters.com%2Fwp-content%2Fuploads%2F2020%2F03%2FIMG_8927.jpg", 
     "description": "Global processes development, implementation and follow up for repair operations. Stakeholder for multiple IT projects including a Mobile App for Repairs and Scooter lifespan tracking.",
     "date": "Oct 2018 - Sep 2020",
     "location": "Stockholm, Sweden"
   },
   {
     "id": 2,
-    "title": "Geographic Information System Intern", 
-    "company": "Universidad Nacional del Litoral https://www.linkedin.com/school/universidad-nacional-del-litoral/",
-    "description": "",
+    "title": "Geographic Information System - Intern", 
+    "company": "Universidad Nacional del Litoral",
+    "url": "https://www.linkedin.com/school/universidad-nacional-del-litoral/",
+    "image": "http://playtelevision.com.ar/wp-content/uploads/2016/04/fave.png",
+    "description": "Use of Geographic Information Systems and data as a tool for the development of native fodder species for future agronomical use.",
     "date": "Apr 2012 - Oct 2014",
     "location": "Esperanza, Argentina"
   }

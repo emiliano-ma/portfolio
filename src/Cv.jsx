@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from "axios"
+import CvCard from './CvCard'
 
 export class Cv extends Component {
   state = {
@@ -15,6 +16,14 @@ export class Cv extends Component {
       })
     })
   }
+  // componentDidMount() {
+  //   axios.get('./src/data/education.json')
+  //   .then(response => {
+  //     this.setState({
+  //       education: response.data
+  //     })
+  //   })
+  // }
 
   render() {
     const workExperiences = this.state.workExperience;
@@ -24,15 +33,25 @@ export class Cv extends Component {
       workExperiencesList = workExperiences.map((workExp) => {
         return (
           <div id={"workExperience-" + workExp.id} key={workExp.id}>
-            <h3 className="ui header">{workExp.title}</h3>
+            <CvCard workExp={workExp} />
           </div>
         )
       })
     }
+
+    
+    
+
     return (
       <div className="ui main container">
         <h1 id="cv-header" className="ui header">CV</h1>
-        {workExperiencesList}
+        <h3>Work Experience</h3>
+
+        <div className="ui stackable two column grid">
+          {workExperiencesList}
+        </div>
+        <h3>Education</h3>
+
       </div>
     )
   }
