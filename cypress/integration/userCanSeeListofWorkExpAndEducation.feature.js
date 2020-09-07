@@ -13,29 +13,29 @@ describe('User can see list of work XPs and Education', () => {
 
   it('displays the second work XP', () => {
     cy.get("#workExperience-2").within(() => {
-      cy.get(".header").should('contain', 'Geographic Information System Intern')
+      cy.get(".header").should('contain', 'Geographic Information System - Intern')
       
     })
   })
 
-  // it('displays the first education', () => {
-  //   cy.get("#education-1").within(() => {
-  //     cy.get(".header").should('contain', 'Coding Bootcamp')
+  it('displays the first education', () => {
+    cy.get("#study-1").within(() => {
+      cy.get(".header").should('contain', 'Coding Bootcamp')
       
-  //   })
-  // })
+    })
+  })
 
-  // it('displays the second education', () => {
-  //   cy.get("#education-2").within(() => {
-  //     cy.get(".header").should('contain', 'Agricultural Engineer, Business and Management')
+  it('displays the second education', () => {
+    cy.get("#study-2").within(() => {
+      cy.get(".header").should('contain', 'Agricultural Engineer, Business and Management')
       
-  //   })
-  // })
+    })
+  })
 
-  // it('displays the third education', () => {
-  //   cy.get("#education-3").within(() => {
-  //     cy.get(".header").should('contain', 'Student exchange')
+  it('displays the third education', () => {
+    cy.get("#study-3").within(() => {
+      cy.get(".header").should('contain', 'Student exchange')
       
-  //   })
-  // })
+    })
+  })
 })

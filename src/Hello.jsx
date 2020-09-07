@@ -9,7 +9,7 @@ const Hello = () => {
           <UndrawPresentation primaryColor='#12283a' height='200px' />
         </div>
         <div class="column">
-          <h1 id="about-header" className="ui header">Hello! World</h1>
+          <h1 id="hello" className="ui header">Hello! World</h1>
           <p>
           And this is me, Emiliano. Here is where I show to the world my work as Full Stack Web Developer. 
           </p>

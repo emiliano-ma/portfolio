@@ -17,9 +17,6 @@ const CvItemStudy = ({ study }) => {
             <div class="description">
               <p>{study.date}</p>
             </div>
-            <div class="extra">
-              <p>no hay desc</p>
-            </div>
           </div>
         </div>
       </div>
